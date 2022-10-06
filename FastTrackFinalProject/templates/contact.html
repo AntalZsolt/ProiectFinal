@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
+</head>
+<body>
+<div class="flex-container">
+    <div class="child1">
+        <p class="boyy"><b>Pentru a vă putea răspunde la întrebări sau pentru a putea colabora,
+           vă rugăm să folosiți formularul de mai jos sau numerele de telefon afișate pe site!</b></p>
+        <form class="form" action="/form/" method="POST">
+           <input id="user" name="user" type="text" placeholder="Nume" required>
+           <br/><br/>
+           <input id="email" name="email" type="email" placeholder="Email" required>
+           <br/><br/>
+           <input id="subject" name="subject" type="text" placeholder="Subiect" required>
+           <br/><br/>
+           <input id="natural" name="natural" type="text" placeholder="Materialul Dorit" required>
+           <br/><br/>
+           <input id="quantity" name="quantity" type="text" placeholder="Cantitate" required>
+           <br/><br/>
+           <input id="size" name="size" type="text" placeholder="Dimensiune Dorita" required>
+           <br/><br/>
+           <input id="company" name="company" type="text" placeholder="Denumire Firma" required>
+           <br/><br/>
+           <button type="submit">Trimite</button>
+        </form>
+    </div>
+    <div class="child2">
+            <h3>&nbsp;Sediu Central:</h3>
+            <p>&nbsp;&nbsp;Cluj-Napoca</p>
+            <p>&nbsp;&nbsp;Nr.Mobil: 0787-654321</p>
+            <p>&nbsp;&nbsp;Nr.Mobil: 0712-345678</p>
+            <p>&nbsp;&nbsp;Fax: 0123-456789</p>
+            <br>
+            <h3>&nbsp;Departamente Vanzari:</h3>
+            <p>&nbsp;&nbsp;office@dreamcode.com</p>
+            <p>&nbsp;&nbsp;sales@dreamcode.com</p>
+            <br>
+            <h3>&nbsp;Departament Tehnic:</h3>
+            <p>&nbsp;&nbsp;office.tehnic@dreamcode.com</p>
+            <p>&nbsp;&nbsp;tehnic@dreamcode.com</p>
+            <br>
+            <h3>&nbsp;Departament Administrativ:</h3>
+            <p>&nbsp;&nbsp;office.admin@dreamcode.com</p>
+            <p>&nbsp;&nbsp;admin@dreamcode.com</p>
+    </div>
+</div>
+</body>
+
+{% endblock content %}
+

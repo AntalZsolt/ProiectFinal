@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
+</head>
+
+<body>
+<div class="flex-container">
+    <div class="child1" >
+        <p class="boyy"><b>Calculator de Preturi Etichete Plastice</b></p>
+        <div class="form2">
+            <form action="/calculation1/" method="post">
+                <h3>Preturile sunt per bucata! Preturile sunt exprimate in EURO si nu contin TVA</h3>
+                <input type="number" name="canta" placeholder="Cantitate Dorita 100x50">
+                <button type="submit" value="calculate">Calculate</button>
+                <div><h4>Pretul etichetelor <u>100x50</u> conform cantitatii dorite: <u>{{ price_eticha }}&nbsp;€</u></h4></div><hr>
+            </form>
+            <form action="/calculation2/" method="post">
+                <input type="number" name="cantb" placeholder="Cantitate Dorita 100x70">
+                <button type="submit" value="calculate">Calculate</button>
+                <div><h4>Pretul etichetelor <u>100x70</u> conform cantitatii dorite: <u>{{ price_etichb }}&nbsp;€</u></h4></div><hr>
+            </form>
+            <form action="/calculation3/" method="post">
+                <input type="number" name="cantc" placeholder="Cantitate Dorita 100x100">
+                <button type="submit" value="calculate">Calculate</button>
+                <div><h4>Pretul etichetelor <u>100x100</u> conform cantitatii dorite: <u>{{ price_etichc }}&nbsp;€</u></h4></div><hr>
+            </form>
+            <form action="/calculation4/" method="post">
+                <input type="number" name="cantd" placeholder="Cantitate Dorita 100x150">
+                <button type="submit" value="calculate">Calculate</button>
+                <div><h4>Pretul etichetelor <u>100x150</u> conform cantitatii dorite: <u>{{ price_etichd }}&nbsp;€</u></h4></div><hr>
+            </form>
+            <form action="/calculation5/" method="post">
+                <input type="number" name="cante" placeholder="Cantitate Dorita 150x200">
+                <button type="submit" value="calculate">Calculate</button>
+                <div><h4>Pretul etichetelor <u>100x150</u> conform cantitatii dorite: <u>{{ price_etiche }}&nbsp;€</u></h4></div>
+            </form>
+        </div>
+    </div>
+    <div class="child1" >
+        <p class="boyy"><b>Calculator de Preturi Etichete Hartie</b></p>
+        <div class="form2">
+            <form action="/calculation6/" method="post">
+                <h3>Preturile sunt per bucata! Preturile sunt exprimate in EURO si nu contin TVA</h3>
+                <input type="number" name="cantf" placeholder="Cantitate Dorita 100x50">
+                <button type="submit" value="calculate">Calculate</button>
+                <div><h4>Pretul etichetelor <u>100x50</u> conform cantitatii dorite: <u>{{ price_etichf }}&nbsp;€</u></h4></div><hr>
+            </form>
+            <form action="/calculation7/" method="post">
+                <input type="number" name="cantg" placeholder="Cantitate Dorita 100x70">
+                <button type="submit" value="calculate">Calculate</button>
+                <div><h4>Pretul etichetelor <u>100x70</u> conform cantitatii dorite: <u>{{ price_etichg }}&nbsp;€</u></h4></div><hr>
+            </form>
+            <form action="/calculation8/" method="post">
+                <input type="number" name="canth" placeholder="Cantitate Dorita 100x100">
+                <button type="submit" value="calculate">Calculate</button>
+                <div><h4>Pretul etichetelor <u>100x100</u> conform cantitatii dorite: <u>{{ price_etichh }}&nbsp;€</u></h4></div><hr>
+            </form>
+            <form action="/calculation9/" method="post">
+                <input type="number" name="canti" placeholder="Cantitate Dorita 100x150">
+                <button type="submit" value="calculate">Calculate</button>
+                <div><h4>Pretul etichetelor <u>100x150</u> conform cantitatii dorite: <u>{{ price_etichi }}&nbsp;€</u></h4></div><hr>
+            </form>
+            <form action="/calculation10/" method="post">
+                <input type="number" name="cantj" placeholder="Cantitate Dorita 150x200">
+                <button type="submit" value="calculate">Calculate</button>
+                <div><h4>Pretul etichetelor <u>100x150</u> conform cantitatii dorite: <u>{{ price_etichj }}&nbsp;€</u></h4></div>
+            </form>
+        </div>
+    </div>
+
+</div>
+</body>
+
+{% endblock content %}

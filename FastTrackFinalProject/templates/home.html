@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content%}
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="child">
+            <img src="/static/slide1.jpg">
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="child">
+            <p style="text-align: justify; margin: 10px;">
+                <i>Noi echipa Dreamcode Labels înțelegem valoarea clienților noștri
+                și ne dorim să fim un suport de calitate pentru dumneavoastră și afacerea dumneavoastră.
+                De aceea facem tot posibilul să vă răspundem rapid și cu exactitate la orice solicitare venită din partea dumneavoastră,
+                să vă oferim sprijin pentru rezolvarea problemelor.</i>
+            </p>
+            <p style="text-align: justify; margin: 10px;">
+                <i>Un loc foarte important în pachetul de servicii oferit clienților
+                noștri ocupă livrarea promtă a produselor comandate.</i><br>
+            </p>
+            <p style="text-align: justify; margin: 10px;">
+                <i>Echipa noastră  gestionează cu atenție deosebită fiecare solicitare și reacționează rapid
+                la necesitățile clienților noștri.</i>
+            </p>
+            <p style="text-align: justify; margin: 10px;">
+                Vă rugăm să nu ezitați să ne contacți direct dacă aveți întrebări sau nelămuriri despre stadiul livrărilor!
+            </p>
+        </div>
+    </div>
+
+</body>
+{% endblock content %}l>
