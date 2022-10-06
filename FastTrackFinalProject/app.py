@@ -189,7 +189,6 @@ def calculation10():
 
         if etp_input == "":
             return render_template('calculator.html')
-
         else:
             return render_template('calculator.html', price_etichj=price_etichj)
 
