@@ -4,11 +4,10 @@ Proiectul studentului Antal Zsolt! Proiectul prezinta siteul firmei DREAMCODE LA
 
 Tehnologii utilizate in proiect:
 
-Flask, Jinja2
+Python / Flask, Jinja2, HTML, CSS, PostgreSQL
 
-HTML, CSS, JAVASCIPT
 
-PostgreSQL
+* Inainte de pornire a programului trebuie rulat DDL.SQL * 
 
 
 Autor: Antal Zsolt
